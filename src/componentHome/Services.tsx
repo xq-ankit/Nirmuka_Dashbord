@@ -10,8 +10,8 @@ const Services = () => {
             <p>Hea=re are some feature of the software</p>
         </div>
         <div className="b-container">
-            <BoxHome image={image1} alte='image1' button='Python' />
-            <BoxHome image={image2} alte='image1' button='Python' />
+            <BoxHome image={image1} button='Python' />
+            <BoxHome image={image2}  button='Python' />
         </div>
     </div>
   )
