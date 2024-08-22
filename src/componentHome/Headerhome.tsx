@@ -10,7 +10,7 @@ const Headerhome = () => {
             <p className="details"> 
 The "Recovery Program Management System" is a government web application designed to efficiently oversee and administer substance abuse recovery initiatives.</p>
             <div className="header-btns">
-            <Link to="/login" className="cv-btn">Get started</Link>
+            <Link to="/sign up" className="cv-btn">Sign Up</Link>
             <Link to="/download-app" className="cv-btn1">Download App</Link>
             </div>
         </div>

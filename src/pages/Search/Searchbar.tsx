@@ -19,7 +19,8 @@ const Searchbar = () => {
 
   return (
     <div className="App">
-      <h1>Rehabilitation Centers</h1>
+      <h1 >Rehabilitation Centers </h1>
+
       <div className="search-container">
         <input
           type="text"

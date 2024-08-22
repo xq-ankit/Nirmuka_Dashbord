@@ -3,6 +3,7 @@ import DataTable from "../../component/dataTable/DataTable"
 import "./users.scss"
 import { userRows } from "../../data";
 
+
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 90 },
   {

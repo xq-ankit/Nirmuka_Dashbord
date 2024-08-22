@@ -1,9 +1,5 @@
-import Home from "./pages/home/Home"
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Home from "./pages/home/Home";
 import Products from "./pages/Products/Products";
 import Menu from "./component/menu/Menu";
 import Navbar from "./component/navbar/Navbar";
@@ -12,13 +8,12 @@ import "./styles/global.scss";
 import Product from "./pages/Product/Product";
 import User from "./pages/user/User";
 import Users from "./pages/users/Users";
-import HomePage from "./pages/homePage/HomePage";
+import LandingPage from "./pages/Landingpage/LandingPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
-import GettingStarted from "./pages/GettingStarted/GettingStarted";
-import Searchbar from "./component/Search/Searchbar";
+import Searchbar from "./pages/Search/Searchbar";
+import Login from "./pages/Login/Login";
 
 function App() {
-   
   const Layout = () => {
     return (
       <div className="main">
@@ -28,7 +23,7 @@ function App() {
             <Menu />
           </div>
           <div className="contentContainer">
-              <Outlet />
+            <Outlet />
           </div>
         </div>
         <Footer />
@@ -39,54 +34,51 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element:<Layout/>,
-      children:[
+      element: <Layout />,
+      children: [
         {
-          path: "/",  
-          element:<Home/>
+          path: "",
+          element: <Home />
         },
         {
           path: "users",
-          element: <Users/>,
+          element: <Users />
         },
         {
-          path: "Products",
-          element: <Products />,
+          path: "products",
+          element: <Products />
         },
         {
-          path: "/users/:id",
-          element:<User/>
+          path: "users/:id",
+          element: <User />
         },
         {
-          path:"/products/:id",
-          element:<Product/>,
+          path: "products/:id",
+          element: <Product />
         },
-
-        
+        {
+          path: "search",
+          element: <Searchbar />
+        }
       ]
     },
     {
-      path:"HomePage",
-      element:<HomePage/>
+      path: "/landingpage",
+      element: <LandingPage />
     },
     {
-      path:"Login",
-      element:<GettingStarted/>
+      path: "*",
+      element: <ErrorPage />
     },
     {
-      path:"Search",
-      element:<Searchbar/>
-    },
-    {
-      path:"*",
-      element:<ErrorPage />
+      path: "/login",
+      element: <Login />
     }
   ]);
 
-
   return (
-    <RouterProvider router={router}/>
-  )
+    <RouterProvider router={router} />
+  );
 }
 
-export default App
+export default App;
