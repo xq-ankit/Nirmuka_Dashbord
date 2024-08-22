@@ -10,7 +10,6 @@ const Navbar = () => {
       </div>
       <div className="icons">
       <Link to="/search">
-        {/* Usable button with the image */}
         <div className="button-with-image">
           </div>
           <img src="/search.svg" alt="" className="icon" />

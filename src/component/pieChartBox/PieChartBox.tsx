@@ -1,8 +1,8 @@
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Tooltip } from 'recharts';; 
+import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';; 
 import "./pieChartBox.scss";
 const data = [
     { name: "LSD", value: 200, color: "#0088FE" },
-    { name: "Cocain", value: 400, color: "#00C49F" },
+    { name: "Cocaine", value: 400, color: "#00C49F" },
     { name: "Morphine", value: 100, color: "#FFBB28" },
     { name: "Hallucinogens", value: 50, color: "#FF8042" },
   ];
