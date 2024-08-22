@@ -20,6 +20,7 @@
     "@refinedev/core": "^4.42.0",
     "@refinedev/mui": "^5.13.10",
     "bootstrap": "^5.3.2",
+    "go": "^3.0.1",
     "jwt-decode": "^3.1.2",
     "mdb-react-ui-kit": "^6.3.0",
     "react": "^18.2.0",
